@@ -31,10 +31,11 @@ class LaounchScreenController: UIViewController {
                     UIView.animate(withDuration: 2.0, animations: {
                         self.logoOutlet.transform = CGAffineTransform(translationX: 0, y: self.view.bounds.size.height)
                         self.TitleLbl.transform = CGAffineTransform(translationX: 0, y: self.view.bounds.size.height)
-                        self.view.backgroundColor = UIColor.white
-                    }) { (true) in
+                        //self.view.backgroundColor = UIColor.white
+                    }) { (success) in
                         let sb = UIStoryboard(name: "Main", bundle: nil)
-                        let vc = sb.instantiateViewController(withIdentifier: "MainStoryBoard")
+                        //let vc = sb.instantiateViewController(withIdentifier: "MainStoryBoard")
+                        let vc = sb.instantiateInitialViewController()
                         UIApplication.shared.keyWindow?.rootViewController = vc
             
                     }
