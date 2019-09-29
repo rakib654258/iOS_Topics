@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mUK-e2-s1J">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Laounch Screen Controller-->
+        <scene sceneID="VPJ-66-JAT">
+            <objects>
+                <viewController id="mUK-e2-s1J" customClass="LaounchScreenController" customModule="FradeIN_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uvf-Kc-fKn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-t9-TRG">
+                                <rect key="frame" x="70" y="279.5" width="274" height="337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blood2" translatesAutoresizingMaskIntoConstraints="NO" id="kq4-TA-Iig">
+                                        <rect key="frame" x="12" y="0.0" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="6lN-zW-CBX"/>
+                                            <constraint firstAttribute="width" constant="250" id="9Pq-YR-nny"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donate Blood BD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3v-Bx-0vM">
+                                        <rect key="frame" x="0.0" y="295" width="274" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Fz-t9-TRG" firstAttribute="centerY" secondItem="Uvf-Kc-fKn" secondAttribute="centerY" id="6lA-au-kbD"/>
+                            <constraint firstItem="6Fz-t9-TRG" firstAttribute="centerX" secondItem="Uvf-Kc-fKn" secondAttribute="centerX" id="HSB-HR-ldc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bOv-78-lyB"/>
+                    </view>
+                    <connections>
+                        <outlet property="TitleLbl" destination="v3v-Bx-0vM" id="Z14-01-DKy"/>
+                        <outlet property="logoOutlet" destination="kq4-TA-Iig" id="g9E-bi-eTf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQo-dB-2wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="234"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blood2" width="180" height="180"/>
+    </resources>
+</document>
