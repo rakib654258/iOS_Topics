@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11AF2D6C562D8660E10F8364 /* Pods_VegaScrollingCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F8BB922BC4800BE15C4F3C /* Pods_VegaScrollingCollectionView.framework */; };
+		B25950DF23E2DEAD00B99449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25950DE23E2DEAD00B99449 /* AppDelegate.swift */; };
+		B25950E123E2DEAD00B99449 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25950E023E2DEAD00B99449 /* SceneDelegate.swift */; };
+		B25950E323E2DEAD00B99449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25950E223E2DEAD00B99449 /* ViewController.swift */; };
+		B25950E623E2DEAD00B99449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25950E423E2DEAD00B99449 /* Main.storyboard */; };
+		B25950E823E2DEB000B99449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25950E723E2DEB000B99449 /* Assets.xcassets */; };
+		B25950EB23E2DEB000B99449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25950E923E2DEB000B99449 /* LaunchScreen.storyboard */; };
+		B25950F623E2E13800B99449 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25950F423E2E13800B99449 /* CollectionViewCell.swift */; };
+		B25950F723E2E13800B99449 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25950F523E2E13800B99449 /* CollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30F8BB922BC4800BE15C4F3C /* Pods_VegaScrollingCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegaScrollingCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D8EC1AECACB8F25CD4A3C3 /* Pods-VegaScrollingCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegaScrollingCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-VegaScrollingCollectionView/Pods-VegaScrollingCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		A111E21C00DDC338F1315A19 /* Pods-VegaScrollingCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegaScrollingCollectionView.release.xcconfig"; path = "Target Support Files/Pods-VegaScrollingCollectionView/Pods-VegaScrollingCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		B25950DB23E2DEAD00B99449 /* VegaScrollingCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegaScrollingCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25950DE23E2DEAD00B99449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B25950E023E2DEAD00B99449 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B25950E223E2DEAD00B99449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B25950E523E2DEAD00B99449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B25950E723E2DEB000B99449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B25950EA23E2DEB000B99449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B25950EC23E2DEB000B99449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25950F423E2E13800B99449 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B25950F523E2E13800B99449 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B25950D823E2DEAD00B99449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AF2D6C562D8660E10F8364 /* Pods_VegaScrollingCollectionView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EF81544DF19C9F47733C8AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69D8EC1AECACB8F25CD4A3C3 /* Pods-VegaScrollingCollectionView.debug.xcconfig */,
+				A111E21C00DDC338F1315A19 /* Pods-VegaScrollingCollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B25950D223E2DEAD00B99449 = {
+			isa = PBXGroup;
+			children = (
+				B25950DD23E2DEAD00B99449 /* VegaScrollingCollectionView */,
+				B25950DC23E2DEAD00B99449 /* Products */,
+				7EF81544DF19C9F47733C8AA /* Pods */,
+				FFC5F23DF46A2533B79EC302 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B25950DC23E2DEAD00B99449 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B25950DB23E2DEAD00B99449 /* VegaScrollingCollectionView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B25950DD23E2DEAD00B99449 /* VegaScrollingCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B25950DE23E2DEAD00B99449 /* AppDelegate.swift */,
+				B25950E023E2DEAD00B99449 /* SceneDelegate.swift */,
+				B25950E223E2DEAD00B99449 /* ViewController.swift */,
+				B25950E423E2DEAD00B99449 /* Main.storyboard */,
+				B25950E723E2DEB000B99449 /* Assets.xcassets */,
+				B25950E923E2DEB000B99449 /* LaunchScreen.storyboard */,
+				B25950EC23E2DEB000B99449 /* Info.plist */,
+				B25950F423E2E13800B99449 /* CollectionViewCell.swift */,
+				B25950F523E2E13800B99449 /* CollectionViewCell.xib */,
+			);
+			path = VegaScrollingCollectionView;
+			sourceTree = "<group>";
+		};
+		FFC5F23DF46A2533B79EC302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30F8BB922BC4800BE15C4F3C /* Pods_VegaScrollingCollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B25950DA23E2DEAD00B99449 /* VegaScrollingCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25950EF23E2DEB000B99449 /* Build configuration list for PBXNativeTarget "VegaScrollingCollectionView" */;
+			buildPhases = (
+				3C961F387A9FAF27B188F13D /* [CP] Check Pods Manifest.lock */,
+				B25950D723E2DEAD00B99449 /* Sources */,
+				B25950D823E2DEAD00B99449 /* Frameworks */,
+				B25950D923E2DEAD00B99449 /* Resources */,
+				52C9CFCCDBF7B15D5B7A2AF9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VegaScrollingCollectionView;
+			productName = VegaScrollingCollectionView;
+			productReference = B25950DB23E2DEAD00B99449 /* VegaScrollingCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B25950D323E2DEAD00B99449 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = RK;
+				TargetAttributes = {
+					B25950DA23E2DEAD00B99449 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = B25950D623E2DEAD00B99449 /* Build configuration list for PBXProject "VegaScrollingCollectionView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B25950D223E2DEAD00B99449;
+			productRefGroup = B25950DC23E2DEAD00B99449 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B25950DA23E2DEAD00B99449 /* VegaScrollingCollectionView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B25950D923E2DEAD00B99449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25950EB23E2DEB000B99449 /* LaunchScreen.storyboard in Resources */,
+				B25950E823E2DEB000B99449 /* Assets.xcassets in Resources */,
+				B25950F723E2E13800B99449 /* CollectionViewCell.xib in Resources */,
+				B25950E623E2DEAD00B99449 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C961F387A9FAF27B188F13D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegaScrollingCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C9CFCCDBF7B15D5B7A2AF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegaScrollingCollectionView/Pods-VegaScrollingCollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegaScrollingCollectionView/Pods-VegaScrollingCollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegaScrollingCollectionView/Pods-VegaScrollingCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B25950D723E2DEAD00B99449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25950E323E2DEAD00B99449 /* ViewController.swift in Sources */,
+				B25950DF23E2DEAD00B99449 /* AppDelegate.swift in Sources */,
+				B25950F623E2E13800B99449 /* CollectionViewCell.swift in Sources */,
+				B25950E123E2DEAD00B99449 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B25950E423E2DEAD00B99449 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B25950E523E2DEAD00B99449 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B25950E923E2DEB000B99449 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B25950EA23E2DEB000B99449 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B25950ED23E2DEB000B99449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B25950EE23E2DEB000B99449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B25950F023E2DEB000B99449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D8EC1AECACB8F25CD4A3C3 /* Pods-VegaScrollingCollectionView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B2K95NY3;
+				INFOPLIST_FILE = VegaScrollingCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rakib654258.VegaScrollingCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B25950F123E2DEB000B99449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A111E21C00DDC338F1315A19 /* Pods-VegaScrollingCollectionView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B2K95NY3;
+				INFOPLIST_FILE = VegaScrollingCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rakib654258.VegaScrollingCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B25950D623E2DEAD00B99449 /* Build configuration list for PBXProject "VegaScrollingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25950ED23E2DEB000B99449 /* Debug */,
+				B25950EE23E2DEB000B99449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25950EF23E2DEB000B99449 /* Build configuration list for PBXNativeTarget "VegaScrollingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25950F023E2DEB000B99449 /* Debug */,
+				B25950F123E2DEB000B99449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B25950D323E2DEAD00B99449 /* Project object */;
+}

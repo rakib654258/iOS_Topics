@@ -1,0 +1,6 @@
+framework module Pods_VegaScrollingCollectionView {
+  umbrella header "Pods-VegaScrollingCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
