@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     var CIFilterNames = [
         "CIPhotoEffectChrome",
@@ -24,11 +24,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var originalImage: UIImageView!
     @IBOutlet weak var imageToFilter: UIImageView!
     @IBOutlet weak var filtersScrollView: UIScrollView!
+    var currentImage = UIImage(named: "nature")
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(importPicture))
         scrollViewBtn()
-        // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    @objc func importPicture(){
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.editedImage] as? UIImage else{return}
+        dismiss(animated: true, completion: nil)
+        currentImage = image
+        originalImage.image = currentImage
+        scrollViewBtn()
+    }
+    
     func scrollViewBtn(){
         var xCoord: CGFloat = 5
         let yCoord: CGFloat = 5
@@ -51,7 +70,8 @@ class ViewController: UIViewController {
             
             //create the filters for each button
             let ciContext = CIContext(options: nil)
-            let coreImage = CIImage(image: originalImage.image!)
+            let coreImage = CIImage(image: currentImage!)
+            //let coreImage = CIImage(image: currentImage)
             let filter = CIFilter(name: "\(CIFilterNames[i])")
             filter?.setDefaults()
             filter?.setValue(coreImage, forKey: kCIInputImageKey)
@@ -80,7 +100,6 @@ class ViewController: UIViewController {
         //save the image into camera roll
         UIImageWriteToSavedPhotosAlbum(imageToFilter.image!, nil, nil, nil)
         
-//        let alert = UIAlertView(title: "Photo Editor", message: "Your image has been saved to photo library", delegate: nil, cancelButtonTitle: "OK")
         let alertController = UIAlertController(title: "Saved", message: "Your altered image has been saved to your photos", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
