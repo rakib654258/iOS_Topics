@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zWW-xc-TNI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Editor-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Photo_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="EjO-zp-7d7">
+                                <rect key="frame" x="8" y="96" width="398" height="448"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GsS-nC-2MK">
+                                <rect key="frame" x="8" y="96" width="398" height="448"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6b-Z9-NV4">
+                                <rect key="frame" x="8" y="782" width="398" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zWj-qe-DUe"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="NtT-1A-5Qs"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-uy-yF1">
+                                <rect key="frame" x="8" y="728" width="398" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F8c-1t-hsN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EjO-zp-7d7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4PS-tY-T1q"/>
+                            <constraint firstItem="GsS-nC-2MK" firstAttribute="width" secondItem="EjO-zp-7d7" secondAttribute="width" id="6Jw-Xz-Epx"/>
+                            <constraint firstItem="GsS-nC-2MK" firstAttribute="height" secondItem="EjO-zp-7d7" secondAttribute="height" id="IKp-nu-taB"/>
+                            <constraint firstItem="EjO-zp-7d7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="OiR-lm-yRb"/>
+                            <constraint firstItem="GsS-nC-2MK" firstAttribute="leading" secondItem="EjO-zp-7d7" secondAttribute="leading" id="o3p-vs-9Bp"/>
+                            <constraint firstItem="EjO-zp-7d7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="pFL-B7-o0a"/>
+                            <constraint firstItem="GsS-nC-2MK" firstAttribute="top" secondItem="EjO-zp-7d7" secondAttribute="top" id="rLr-Ua-WKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EjO-zp-7d7" secondAttribute="trailing" constant="8" id="vD8-EJ-GX6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo Editor" id="n4f-bw-hWR"/>
+                    <connections>
+                        <outlet property="filtersScrollView" destination="p6b-Z9-NV4" id="wPg-U6-6Xc"/>
+                        <outlet property="imageToFilter" destination="GsS-nC-2MK" id="SeY-7e-80D"/>
+                        <outlet property="originalImage" destination="EjO-zp-7d7" id="fO0-ql-goM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.86956521739137" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v5v-Ei-Xqz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zWW-xc-TNI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e6W-Yb-5lG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aF7-5G-nc5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETP-YA-bMD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nature" width="512" height="341.5"/>
+    </resources>
+</document>
