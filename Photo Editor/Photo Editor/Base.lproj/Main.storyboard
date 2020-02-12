@@ -27,15 +27,6 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="zWj-qe-DUe"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="NtT-1A-5Qs"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-uy-yF1">
-                                <rect key="frame" x="8" y="728" width="398" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="savePicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F8c-1t-hsN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>

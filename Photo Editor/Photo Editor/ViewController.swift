@@ -28,16 +28,30 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(importPicture))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(savePicture))
         scrollViewBtn()
     }
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
+    
     @objc func importPicture(){
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true, completion: nil)
+    }
+    
+    @objc func savePicture(){
+        //save the image into camera roll one way
+        //        UIImageWriteToSavedPhotosAlbum(imageToFilter.image!, nil, nil, nil)
+        //
+        //        let alertController = UIAlertController(title: "Saved", message: "Your altered image has been saved to your photos", preferredStyle: .alert)
+        //        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        //        present(alertController, animated: true, completion: nil)
+                
+                //save the image into camera roll another way
+                guard let image = imageToFilter.image else{return}
+                let filterImage = [image]
+                let ac = UIActivityViewController(activityItems: filterImage, applicationActivities: nil)
+                present(ac, animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -95,21 +109,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         let button = sender as UIButton
         imageToFilter.image = button.backgroundImage(for: UIControl.State.normal)
     }
-    
-    @IBAction func savePicButton(_ sender: Any) {
-        //save the image into camera roll one way
-//        UIImageWriteToSavedPhotosAlbum(imageToFilter.image!, nil, nil, nil)
-//
-//        let alertController = UIAlertController(title: "Saved", message: "Your altered image has been saved to your photos", preferredStyle: .alert)
-//        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//        present(alertController, animated: true, completion: nil)
-        
-        //save the image into camera roll another way
-        guard let image = imageToFilter.image else{return}
-        let filterImage = [image]
-        let ac = UIActivityViewController(activityItems: filterImage, applicationActivities: nil)
-        present(ac, animated: true)
 
-    }
 }
 
